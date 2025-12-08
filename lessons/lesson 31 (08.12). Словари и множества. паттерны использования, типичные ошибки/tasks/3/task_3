@@ -1,0 +1,6 @@
+set_a = {'max@site.ru', 'vera@gmail.com', 'anna@mail.ru'}
+set_b = {'vera@gmail.com', 'kate@mail.ru', 'neo@site.ru'}
+set_1 = set_a & set_b
+print("Подписаны на обе темы", set_1)
+set_2 = set_b - set_a
+print("Только скидки", set_2)
