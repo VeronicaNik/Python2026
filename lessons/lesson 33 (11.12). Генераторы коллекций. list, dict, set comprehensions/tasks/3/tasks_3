@@ -1,0 +1,8 @@
+courses = [
+    {"title": "Основы Python", "score": 80},
+    {"title": "Git", "score": 65},
+    {"title": "SQL", "score": 72}]
+course_status = {cours["title"]: cours["score"]
+                 for cours in courses
+                 if cours["score"]>=70}
+print(course_status)
