@@ -1,0 +1,7 @@
+orders = [
+    (101, "в работе", 450),
+    (102, "готов", 510),
+    (103, "готов", 700),
+    (104, "отменён", 900)]
+ready_orders = [f"Заказ #{order_id}: {price} ₽" for order_id, status, price in orders if price >= 500 and status == "готов"]
+print(ready_orders) 
