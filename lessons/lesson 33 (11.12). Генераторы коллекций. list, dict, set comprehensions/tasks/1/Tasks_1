@@ -1,0 +1,7 @@
+animals = ["кот", "бегемот", "лось", "рысь", "жираф", "пёс"]
+shot_names = []
+for shot_names in animals:
+    if len(shot_names)<5:
+        shot_names = list(shot_names.upper())
+        print(shot_names)
+    exit
