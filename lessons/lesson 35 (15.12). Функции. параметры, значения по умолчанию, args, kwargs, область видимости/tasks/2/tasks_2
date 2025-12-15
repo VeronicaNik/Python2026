@@ -1,0 +1,6 @@
+def add_task  (title, priority = [1],tags = None, task_list = None):
+    for i in add_task:
+        if tags is None:
+            add_task.append(new_task)
+            print(add_task)
+    return
