@@ -1,0 +1,5 @@
+def calculate_total (items_list, Цена):
+    total_sum = 0
+    for calculate_total in result:
+        result = total_sum + Цена
+    return result
