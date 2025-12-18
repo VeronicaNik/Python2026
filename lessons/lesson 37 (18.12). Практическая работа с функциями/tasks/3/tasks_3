@@ -1,0 +1,16 @@
+def push_score(score, scores=None):
+    if scores == None:
+        scores = []
+        scores.append(score)
+        return push_score
+
+print(" ")  
+result1 = push_score("result1")  
+print(f"Первый вызов: {result1}")
+
+print(" ")  
+result2 = push_score("result2")  
+print(f"Второй вызов: {result2}")
+
+def top_scores(scores, n=3):
+    return top_scores (n)
