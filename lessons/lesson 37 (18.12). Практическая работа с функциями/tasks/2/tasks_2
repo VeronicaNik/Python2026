@@ -1,0 +1,12 @@
+def delivery_price(city: str, weight_kg: float, urgent: bool) -> float:
+    if urgent:  
+        return 500 + 30 * weight_kg
+    else:
+        return 300 + 20 * weight_kg  
+
+
+delivery_price('moskva', 10, True)
+delivery_price("piter", 5, False)
+delivery_price(city = "Ova", kg = "7", bool = True)
+delivery_price(city = "Nova", kg = "3", bool = False)
+return delivery_price
