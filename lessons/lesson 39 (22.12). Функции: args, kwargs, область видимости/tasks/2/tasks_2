@@ -1,0 +1,16 @@
+
+def prepare_request(**kwargs):
+    timeout = kwargs.get("timeout", 10)
+    retries = kwargs.get("retries", 0)
+    endpoint = {"sync", "fast"}
+
+    extras = {key: value for key, value in kwargs.items() if key in endpoint}
+    return {
+        "timeout": timeout,
+        "retries": retries,
+        "meta": extras,
+    }
+
+print(prepare_request(endpoint="/sync", timeout=10, retries=0, mode="fast"))
+print(prepare_request(endpoint="/stats", data=[1, 2]))
+
