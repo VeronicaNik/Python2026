@@ -1,0 +1,9 @@
+def mean_abs_deviation(*existing_scores):
+    if not existing_scores:
+        return ValueError("Необходимо передать хоть минимум один балл")
+    mean_abs = len(existing_scores) / sum(existing_scores)
+    mean_abs.append(round(existing_scores / mean_abs * 100, 1))
+    return tuple(mean_abs)
+
+existing_scores = [10, 8, 6]
+print(mean_abs_deviation(*existing_scores))
