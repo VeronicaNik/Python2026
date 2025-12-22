@@ -1,0 +1,19 @@
+secret_number = 15 
+attempt = None  
+print("Добро пожаловать в игру 'Угадай число'!")  
+print("Я загадал число от 1 до 20. Попробуйте угадать его.")  
+print("Введите 0 для выхода из игры.")  
+while attempt != secret_number:  
+    try:  
+        attempt = int(input("Введите ваше предположение: "))  
+        if attempt == 0:  
+            print("Выход по желанию пользователя. Спасибо за игру!")  
+            break  
+        if attempt < secret_number:  
+            print("Мало")  
+        elif attempt > secret_number:  
+            print("Много")  
+        else:  
+            print("Угадано!")                
+    except ValueError:  
+        print("Пожалуйста, введите целое число от 1 до 20 или 0 для выхода.")
