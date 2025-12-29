@@ -1,0 +1,6 @@
+main_dishes = ["стейк", "паста", "салат"]
+desserts = ["чизкейк", "мороженое", "тирамису"]
+main_dishes.append(desserts)
+print(main_dishes)
+print(main_dishes[0])
+print(main_dishes[-1])
