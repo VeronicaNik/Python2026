@@ -12,6 +12,6 @@ jobs:
   call-central-runner:
     uses: Pau1R/python2026/.github/workflows/test_runner.yml@main
     secrets:
-      TEACHER_PAT: ${{ secrets.TASKS_REPO_TOKEN }}
+      TASKS_REPO_TOKEN: ${{ secrets.TASKS_REPO_TOKEN }}
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       TASKS_REPO_CLASSIC_TOKEN: ${{ secrets.TASKS_REPO_CLASSIC_TOKEN }}
